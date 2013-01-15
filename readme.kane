@@ -1,0 +1,16 @@
+#create ~/bin and the clone this
+cp harleguin.vim /home/kren/bin/vim73/share/vim/vim73/colors/
+#make:
+#./configure --prefix=$HOME/bin --with-features=huge
+make 
+make install
+
+#install pathogen
+mkdir -p ~/.vim/autoload ~/.vim/bundle; \
+curl -Sso ~/.vim/autoload/pathogen.vim \
+    https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+
+
+
+unzip taglist_45.zip
+cp -rf doc/ plugin/ /home/kren/bin/vim73/share/vim/vim73/
